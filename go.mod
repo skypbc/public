@@ -3,8 +3,8 @@ module github.com/skypbc/public
 go 1.24.4
 
 require (
-	github.com/skypbc/adata v0.0.0-20260124095633-fad6161df11d
-	github.com/skypbc/goutils v0.0.0-20260124094408-a60782fbc9bb
+	github.com/skypbc/adata v0.1.0
+	github.com/skypbc/goutils v0.1.0
 	golang.org/x/exp v0.0.0-20250620022241-b7579e27df2b
 )
 
