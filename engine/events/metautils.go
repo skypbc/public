@@ -24,26 +24,24 @@ func TryMeta[R any, T IMetaSource](metaSource T) (res R, ok bool) {
 	return res, true
 }
 
-func MetaValue[R any, T IMetaSource](metaSource T, key string, d R) (res R) {
+func MetaValue[R any, T IMetaSource](metaSource T, key string, d ...R) (res R) {
 	meta := meta(metaSource)
 	if err := meta.Value(key, &res); err == nil {
 		return res
 	}
-	return d
+	if len(d) > 0 {
+		return d[0]
+	}
+	return res
 }
 
-func MetaTryValue[R any, T IMetaSource](metaSource T, key string, d R) (res R, ok bool) {
+func MetaTryValue[R any, T IMetaSource](metaSource T, key string, d ...R) (res R, ok bool) {
 	meta := meta(metaSource)
 	if err := meta.Value(key, &res); err == nil {
 		return res, true
 	}
-	return d, false
-}
-
-func MetaTryValue2[R any, T IMetaSource](metaSource T, key string) (res R, ok bool) {
-	meta := meta(metaSource)
-	if err := meta.Value(key, &res); err == nil {
-		return res, true
+	if len(d) > 0 {
+		return d[0], false
 	}
 	return res, false
 }
