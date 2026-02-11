@@ -13,8 +13,8 @@ github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINE
 github.com/rs/xid v1.6.0/go.mod h1:7XoLgs4eV+QndskICGsho+ADou8ySMSjJKDIan90Nz0=
 github.com/rs/zerolog v1.34.0 h1:k43nTLIwcTVQAncfCw4KZ2VY6ukYoZaBPNOE8txlOeY=
 github.com/rs/zerolog v1.34.0/go.mod h1:bJsvje4Z08ROH4Nhs5iH600c3IkWhwp44iRc54W6wYQ=
-github.com/skypbc/adata v0.1.0 h1:Cfezco1TSFc2NVxXnh8L2VpKGoZPMqEdbSGtgkuSGI8=
-github.com/skypbc/adata v0.1.0/go.mod h1:pSxoTUSqrKHGs+CV/u+GNy+/9tZqK6ILADf3U6LanCs=
+github.com/skypbc/adata v0.1.2 h1:HVR+TD4W8GJ4wex6WeN1GJzzLil428S+8w49g1LRxMs=
+github.com/skypbc/adata v0.1.2/go.mod h1:RCmvkQf5vzGfdfjK3I6ar6wVUEdRMZisk0i+vSZp+CM=
 github.com/skypbc/goutils v0.2.2 h1:9CS9IhFqO8ZG6/uPKE846PHKgb6K4UW/080aGMgf5Tg=
 github.com/skypbc/goutils v0.2.2/go.mod h1:7i8dPkbggBKtStMpyNoBxGR/K8px+A18IO6eiYM3SS4=
 github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6KllzawFIhcdPw=
