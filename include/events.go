@@ -133,6 +133,7 @@ type IMeta interface {
 	SetValue(key string, value any) error
 
 	Data() map[string]any
+	IsData() bool
 	SetData(data map[string]any)
 
 	Size() int64

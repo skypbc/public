@@ -67,6 +67,7 @@ type ICommandManager interface {
 	Name(sig ICommandSignature) (name string, err error)
 	Path(sig ICommandSignature) string
 	Signature(cmdId int64) (sig ICommandSignature, err error)
+	Get(sig ICommandSignature) (ICommandInfo, error)
 
 	AddPreHook(plugin IPlugin, fn CmdExecuteHookProtoPre)
 	RemovePreHook(plugin IPlugin, fn ...CmdExecuteHookProtoPre)
