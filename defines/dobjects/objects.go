@@ -2,8 +2,9 @@ package dobjects
 
 import (
 	"context"
-	"github.com/skypbc/public/engine/config"
-	"github.com/skypbc/public/include"
+
+	"github.com/skypbc/goutils/gerrors"
+	"github.com/skypbc/public/engine/objects"
 )
 
 var (
@@ -14,15 +15,28 @@ var (
 	HookManager int
 )
 
-var initItems = []include.ConfigInitItem{
-	{Key: "none", ItemRef: &None},
-
-	{Key: "config", ItemRef: &Config},
-	{Key: "plugin_manager", ItemRef: &PluginManager},
-	{Key: "command_manager", ItemRef: &CommandManager},
-	{Key: "hook_manager", ItemRef: &HookManager},
+var initItems = map[string]*int{
+	"none":            &None,
+	"config":          &Config,
+	"plugin_manager":  &PluginManager,
+	"command_manager": &CommandManager,
+	"hook_manager":    &HookManager,
 }
 
 func Init(ctx context.Context) error {
-	return config.InitItems(ctx, initItems, "defines.objects")
+	objManager := objects.ExtractObjectManager(ctx)
+	if objManager == nil {
+		return gerrors.NewNotFoundError().
+			SetTemplate("ObjectManager not found!")
+	}
+	for k, v := range initItems {
+		index := objManager.Index(k, true)
+		if index == -1 {
+			return gerrors.NewUnknownError().
+				SetTemplate("Failed to create object for key: {key}").
+				AddStr("key", k)
+		}
+		*v = index
+	}
+	return nil
 }
