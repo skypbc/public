@@ -1,7 +1,7 @@
 github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=
 github.com/google/uuid v1.6.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
-github.com/skypbc/adata v1.0.2-dev.260819.0 h1:XJrqqksXp/Bjz5GhRW8QLRU3mZjPqNGJW9TL22I44lQ=
-github.com/skypbc/adata v1.0.2-dev.260819.0/go.mod h1:R1xay36HYaBoW2hZWtwio7jLQt2yDysgvqgsrK2Edu0=
+github.com/skypbc/adata v1.0.2-dev.261015.1 h1:5VHNlcEAt7tNvpEwQTgK62rgF349ILdJ03QrW0LM4IY=
+github.com/skypbc/adata v1.0.2-dev.261015.1/go.mod h1:R1xay36HYaBoW2hZWtwio7jLQt2yDysgvqgsrK2Edu0=
 github.com/skypbc/goutils v1.0.2-dev.260819.0 h1:bCL7eDjyH5sL0dorvCqyJZUadTvXGvo05Vo6amYstYE=
 github.com/skypbc/goutils v1.0.2-dev.260819.0/go.mod h1:g5AvwI7TCt9I3WK08c4tLcfxAg8p7GZj34AIxQ2uP4A=
 github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6KllzawFIhcdPw=
